@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 '''
 # Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-# 
+#
 #  This file was generated and any changes will be overwritten.
 '''
 
@@ -38,8 +38,8 @@ class Item(OneDriveObjectBase):
     def created_by(self):
         """
         Gets and sets the createdBy
-        
-        Returns: 
+
+        Returns:
             :class:`IdentitySet<onedrivesdk.model.identity_set.IdentitySet>`:
                 The createdBy
         """
@@ -60,7 +60,7 @@ class Item(OneDriveObjectBase):
     def created_date_time(self):
         """
         Gets and sets the createdDateTime
-        
+
         Returns:
             datetime:
                 The createdDateTime
@@ -81,7 +81,7 @@ class Item(OneDriveObjectBase):
     def c_tag(self):
         """
         Gets and sets the cTag
-        
+
         Returns:
             str:
                 The cTag
@@ -99,7 +99,7 @@ class Item(OneDriveObjectBase):
     def description(self):
         """
         Gets and sets the description
-        
+
         Returns:
             str:
                 The description
@@ -117,7 +117,7 @@ class Item(OneDriveObjectBase):
     def e_tag(self):
         """
         Gets and sets the eTag
-        
+
         Returns:
             str:
                 The eTag
@@ -135,7 +135,7 @@ class Item(OneDriveObjectBase):
     def id(self):
         """
         Gets and sets the id
-        
+
         Returns:
             str:
                 The id
@@ -153,8 +153,8 @@ class Item(OneDriveObjectBase):
     def last_modified_by(self):
         """
         Gets and sets the lastModifiedBy
-        
-        Returns: 
+
+        Returns:
             :class:`IdentitySet<onedrivesdk.model.identity_set.IdentitySet>`:
                 The lastModifiedBy
         """
@@ -175,7 +175,7 @@ class Item(OneDriveObjectBase):
     def last_modified_date_time(self):
         """
         Gets and sets the lastModifiedDateTime
-        
+
         Returns:
             datetime:
                 The lastModifiedDateTime
@@ -196,7 +196,7 @@ class Item(OneDriveObjectBase):
     def name(self):
         """
         Gets and sets the name
-        
+
         Returns:
             str:
                 The name
@@ -214,8 +214,8 @@ class Item(OneDriveObjectBase):
     def parent_reference(self):
         """
         Gets and sets the parentReference
-        
-        Returns: 
+
+        Returns:
             :class:`ItemReference<onedrivesdk.model.item_reference.ItemReference>`:
                 The parentReference
         """
@@ -236,7 +236,7 @@ class Item(OneDriveObjectBase):
     def size(self):
         """
         Gets and sets the size
-        
+
         Returns:
             int:
                 The size
@@ -254,7 +254,7 @@ class Item(OneDriveObjectBase):
     def web_url(self):
         """
         Gets and sets the webUrl
-        
+
         Returns:
             str:
                 The webUrl
@@ -269,11 +269,29 @@ class Item(OneDriveObjectBase):
         self._prop_dict["webUrl"] = val
 
     @property
+    def download_url(self):
+        """
+        Gets and sets the downloadUrl
+
+        Returns:
+            str:
+                The downloadUrl
+        """
+        if "@content.downloadUrl" in self._prop_dict:
+            return self._prop_dict["@content.downloadUrl"]
+        else:
+            return None
+
+    @download_url.setter
+    def download_url(self, val):
+        self._prop_dict["@content.downloadUrl"] = val
+
+    @property
     def audio(self):
         """
         Gets and sets the audio
-        
-        Returns: 
+
+        Returns:
             :class:`Audio<onedrivesdk.model.audio.Audio>`:
                 The audio
         """
@@ -294,8 +312,8 @@ class Item(OneDriveObjectBase):
     def deleted(self):
         """
         Gets and sets the deleted
-        
-        Returns: 
+
+        Returns:
             :class:`Deleted<onedrivesdk.model.deleted.Deleted>`:
                 The deleted
         """
@@ -316,8 +334,8 @@ class Item(OneDriveObjectBase):
     def file(self):
         """
         Gets and sets the file
-        
-        Returns: 
+
+        Returns:
             :class:`File<onedrivesdk.model.file.File>`:
                 The file
         """
@@ -338,8 +356,8 @@ class Item(OneDriveObjectBase):
     def file_system_info(self):
         """
         Gets and sets the fileSystemInfo
-        
-        Returns: 
+
+        Returns:
             :class:`FileSystemInfo<onedrivesdk.model.file_system_info.FileSystemInfo>`:
                 The fileSystemInfo
         """
@@ -360,8 +378,8 @@ class Item(OneDriveObjectBase):
     def folder(self):
         """
         Gets and sets the folder
-        
-        Returns: 
+
+        Returns:
             :class:`Folder<onedrivesdk.model.folder.Folder>`:
                 The folder
         """
@@ -382,8 +400,8 @@ class Item(OneDriveObjectBase):
     def image(self):
         """
         Gets and sets the image
-        
-        Returns: 
+
+        Returns:
             :class:`Image<onedrivesdk.model.image.Image>`:
                 The image
         """
@@ -404,8 +422,8 @@ class Item(OneDriveObjectBase):
     def location(self):
         """
         Gets and sets the location
-        
-        Returns: 
+
+        Returns:
             :class:`Location<onedrivesdk.model.location.Location>`:
                 The location
         """
@@ -426,8 +444,8 @@ class Item(OneDriveObjectBase):
     def open_with(self):
         """
         Gets and sets the openWith
-        
-        Returns: 
+
+        Returns:
             :class:`OpenWithSet<onedrivesdk.model.open_with_set.OpenWithSet>`:
                 The openWith
         """
@@ -448,8 +466,8 @@ class Item(OneDriveObjectBase):
     def photo(self):
         """
         Gets and sets the photo
-        
-        Returns: 
+
+        Returns:
             :class:`Photo<onedrivesdk.model.photo.Photo>`:
                 The photo
         """
@@ -470,8 +488,8 @@ class Item(OneDriveObjectBase):
     def remote_item(self):
         """
         Gets and sets the remoteItem
-        
-        Returns: 
+
+        Returns:
             :class:`Item<onedrivesdk.model.item.Item>`:
                 The remoteItem
         """
@@ -492,8 +510,8 @@ class Item(OneDriveObjectBase):
     def search_result(self):
         """
         Gets and sets the searchResult
-        
-        Returns: 
+
+        Returns:
             :class:`SearchResult<onedrivesdk.model.search_result.SearchResult>`:
                 The searchResult
         """
@@ -514,8 +532,8 @@ class Item(OneDriveObjectBase):
     def shared(self):
         """
         Gets and sets the shared
-        
-        Returns: 
+
+        Returns:
             :class:`Shared<onedrivesdk.model.shared.Shared>`:
                 The shared
         """
@@ -536,8 +554,8 @@ class Item(OneDriveObjectBase):
     def special_folder(self):
         """
         Gets and sets the specialFolder
-        
-        Returns: 
+
+        Returns:
             :class:`SpecialFolder<onedrivesdk.model.special_folder.SpecialFolder>`:
                 The specialFolder
         """
@@ -558,8 +576,8 @@ class Item(OneDriveObjectBase):
     def video(self):
         """
         Gets and sets the video
-        
-        Returns: 
+
+        Returns:
             :class:`Video<onedrivesdk.model.video.Video>`:
                 The video
         """
@@ -579,8 +597,8 @@ class Item(OneDriveObjectBase):
     @property
     def permissions(self):
         """Gets and sets the permissions
-        
-        Returns: 
+
+        Returns:
             :class:`PermissionsCollectionPage<onedrivesdk.request.permissions_collection.PermissionsCollectionPage>`:
                 The permissions
         """
@@ -592,8 +610,8 @@ class Item(OneDriveObjectBase):
     @property
     def subscriptions(self):
         """Gets and sets the subscriptions
-        
-        Returns: 
+
+        Returns:
             :class:`SubscriptionsCollectionPage<onedrivesdk.request.subscriptions_collection.SubscriptionsCollectionPage>`:
                 The subscriptions
         """
@@ -605,8 +623,8 @@ class Item(OneDriveObjectBase):
     @property
     def versions(self):
         """Gets and sets the versions
-        
-        Returns: 
+
+        Returns:
             :class:`VersionsCollectionPage<onedrivesdk.request.versions_collection.VersionsCollectionPage>`:
                 The versions
         """
@@ -618,8 +636,8 @@ class Item(OneDriveObjectBase):
     @property
     def children(self):
         """Gets and sets the children
-        
-        Returns: 
+
+        Returns:
             :class:`ChildrenCollectionPage<onedrivesdk.request.children_collection.ChildrenCollectionPage>`:
                 The children
         """
@@ -631,8 +649,8 @@ class Item(OneDriveObjectBase):
     @property
     def tags(self):
         """Gets and sets the tags
-        
-        Returns: 
+
+        Returns:
             :class:`TagsCollectionPage<onedrivesdk.request.tags_collection.TagsCollectionPage>`:
                 The tags
         """
@@ -644,8 +662,8 @@ class Item(OneDriveObjectBase):
     @property
     def thumbnails(self):
         """Gets and sets the thumbnails
-        
-        Returns: 
+
+        Returns:
             :class:`ThumbnailsCollectionPage<onedrivesdk.request.thumbnails_collection.ThumbnailsCollectionPage>`:
                 The thumbnails
         """
